@@ -12,3 +12,6 @@ wheels/
 
 # Data
 candidate_public
+
+# Locally downloaded model weights
+models/
