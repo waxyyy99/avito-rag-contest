@@ -163,7 +163,9 @@ Both final embedding models are below the 1B-parameter limit. Qwen3-Embedding-0.
 
 ## Reproduction
 
-The public data must be available at `candidate_public/candidate_data/`. Dependencies are locked in `uv.lock`. Download models once, then inference works only from local files:
+Dependencies are locked in `uv.lock`. To run the notebook on a new platform, place `candidate_public.zip` in the project root. Section 0 extracts it into `candidate_public/` and locates `candidate_data`; section 0.1 downloads BGE-M3 and FRIDA into `models/` only if they are absent.
+
+For standalone submission generation, extract the data so it is available at `candidate_public/candidate_data/`, then download the models once:
 
 ```bash
 uv sync

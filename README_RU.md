@@ -164,7 +164,9 @@ RRF(article) = sum(channel_weight / (100 + rank_in_channel))
 
 ## Воспроизведение
 
-Данные должны находиться в `candidate_public/candidate_data/`. Зависимости зафиксированы в `uv.lock`. Модели необходимо загрузить один раз, после чего inference работает только с локальными файлами:
+Зависимости зафиксированы в `uv.lock`. Для запуска notebook на новой платформе поместите `candidate_public.zip` в корень проекта. Раздел 0 извлечет его в `candidate_public/` и найдет каталог `candidate_data`; раздел 0.1 скачает BGE-M3 и FRIDA в `models/`, только если моделей там нет.
+
+Для отдельного запуска генератора submission извлеките данные в `candidate_public/candidate_data/`, затем один раз загрузите модели:
 
 ```bash
 uv sync
