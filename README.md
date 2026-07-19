@@ -2,7 +2,7 @@
 
 ## Result
 
-Selected local hybrid retrieval reaches **MAP@10 = 0.6488** in 5-fold cross-validation on `calibration.f`.
+Selected local hybrid retrieval reaches **MAP@10 = 0.6488** in 5-fold cross-validation on public `calibration.f`.
 
 
 ## Data Preparation
